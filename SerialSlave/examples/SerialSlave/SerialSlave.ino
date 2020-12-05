@@ -1,5 +1,5 @@
 #include <DataRegister.h>
-#include "SerProt.h"
+#include <SerProt.h>
 
 //----------------------------------
 // Data Register
