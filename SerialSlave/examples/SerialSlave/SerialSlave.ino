@@ -35,10 +35,10 @@ void setup() {
   reg = DataRegister(num_buffer, num_register, buffer_array, size_array, index_array);
   prot.set_register(reg);
 
-  r0 = (unsigned int*)  reg.link(0, 2); *r0 = 1337;
-  r1 = (float*)         reg.link(1, 4); *r1 = 12.23;
-  r2 = (unsigned long*) reg.link(2, 4); *r2 = 0;
-  r3 = (unsigned long*) reg.link(3, 4); *r3 = 0;
+  r0 = (unsigned int*)  reg.link(0); *r0 = 1337;
+  r1 = (float*)         reg.link(1); *r1 = 12.23;
+  r2 = (unsigned long*) reg.link(2); *r2 = 0;
+  r3 = (unsigned long*) reg.link(3); *r3 = 0;
   reg.lock();
 //  for (word i = 0; i < buffer_add; i++) {
 //    reg.put((byte*) i, i+3);

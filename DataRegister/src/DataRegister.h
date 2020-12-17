@@ -13,10 +13,9 @@ class DataRegister {
     DataRegister();
     DataRegister(int num_buffer, int num_register, byte value_buffer[], int size_array[], int index_array[]);
 
-    byte * link(int reg_num, int size);
+    byte * link(int reg_num);
     Register get(int reg_num);
     void put(byte* value, int reg_num);
-    void lock();
 
     
   private:
